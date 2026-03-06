@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form method="POST" class="form-exemplo">
+        <!-- Campo Nome -->
+        <label for="nome">Nome:</label><br>
+        <input class="dados-form" type="text" id="nome" name="nome" placeholder="Seu nome completo" required><br><br>
+        
+        <!-- Campo E-mail -->
+        <label for="email">E-mail:</label><br>
+        <input class="dados-form" type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
+
+        <!-- Campo CPF -->
+        <label for="cpf">CPF:</label><br>
+        <input class="dados-form" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required><br><br>
+
+        <!-- Campo Endereço -->
+        <label for="endereco">Endereço:</label><br>
+        <input class="dados-form" type="text" id="endereco" name="endereco" placeholder="Endedeço" required><br><br>
+        
+        <!-- Botão de Envio -->
+        <button type="submit" onclick="soma()">Enviar</button>
+    </form>
+</body>
+</html>
