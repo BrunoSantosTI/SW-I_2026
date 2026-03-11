@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 0 auto;
+    width: 30em;
+    color: white;
+}
+
+.areaInput{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#num1, #num2{
+    border: none;
+    border-radius: 5px ;
+    padding: 1%;
+}
+
+#num1{
+    width: 100%;
+}
+
+#num2{
+    width: 100%;
+}
+
+.BtnEnviar{
+    border: none;
+    background-color: #acada8;
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    font-weight: 700;
+    margin: 10px;
+    width: 100%;
+}

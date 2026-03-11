@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 0 auto;
+    width: 30em;
+    color: white;
+}
+
+.areaInput{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+#campoNome{
+    border: none;
+    border-radius: 5px ;
+    padding: 1%;
+}
+
+#campoNome::placeholder{
+    color: #47474757;
+}
+
+.BtnEnviar{
+    border: none;
+    background-color: #acada8;
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    font-weight: 700;
+}
