@@ -14,18 +14,15 @@
 .areaInput{
     display: flex;
     flex-direction: row;
+    gap: 10px;
     width: 100%;
 }
 
-#num1, #num2{
+#peso, #altura{
     border: none;
     border-radius: 5px ;
     padding: 1%;
     width: 100%;
-}
-
-#num1{
-    margin-right: 10px;
 }
 
 .BtnEnviar{
