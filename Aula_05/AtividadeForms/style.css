@@ -19,6 +19,7 @@
 }
 
 .areaNota{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -58,4 +59,12 @@
     font-weight: 700;
     margin: 10px;
     width: 100%;
+    margin-left: 0;
+}
+
+h1{
+    text-align: center;
+    background-color: #acada8;
+    border-radius: 5px;
+    padding: 1%;
 }
