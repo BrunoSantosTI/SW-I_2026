@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 0 auto;
+    width: 50em;
+    color: white;
+}
+
+.areaInput{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.labelNome, .labelFaltas, .labelSB{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+    align-items: center;
+}
+
+.inputNome, .inputFaltas, .inputSB{
+    border: none;
+    border-radius: 5px ;
+    padding: 1%;
+    width: 100%;
+    margin: 0;
+}
+
+.btnEnviar{
+    border: none;
+    background-color: #acada8;
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    font-weight: 700;
+    margin: 10px;
+    width: 100%;
+    margin-left: 0;
+}
+
+h1{
+    text-align: center;
+    background-color: #acada8;
+    border-radius: 5px;
+    padding: 1%;
+}
