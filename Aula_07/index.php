@@ -22,25 +22,32 @@
 
     <header class="header">
         <?php
-            echo '<img class="logo" src="img/Duolingo-Logo.png" alt="Logo">';
-
+            echo '<img class="logo" src="img/DuoLogoo.png" alt="Logo">';
+            echo '<div class="nav">';
             foreach($_MENU as $key => $value){
-                echo '<a class="titulo" href="?page='.$key.'">'.$key.'</a> | ';
+                echo '<div class="links-nav"><a class="titulo" href="?page='.$key.'">'.$key.'</a></div>';
             }
+            echo '</div>';
         ?>
+        <hr>
     </header>
 
-    <body>    
-        <?php
-            $_pagina = $_GET['page'] ?? 'Home';
+    <body>
+        <main>
+            <?php
+                $_pagina = $_GET['page'] ?? 'Home';
 
-            if(array_key_exists($_pagina, $_MENU)){
-                include $_MENU[$_pagina];
+                if(array_key_exists($_pagina, $_MENU)){
+                    include $_MENU[$_pagina];
 
-            } else {
-                echo '<h1>Página não encontrada</h1>';
-            }
-        ?> 
-        <footer>Feito por Bruno Ferreira dos Santos</footer> 
+                } else {
+                    echo '<h1>Página não encontrada</h1>';
+                }
+            ?> 
+        </main>    
+        <footer>
+            <h1>Feito por Bruno Ferreira dos Santos</h1>
+            <p>Copyright © 2026 - Todos os direitos reservados.</p>
+        </footer> 
     </body>
 </html>
