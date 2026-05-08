@@ -2,9 +2,9 @@
     $_MENU = [
         'Home' => 'home.php',
         'Sobre' => 'sobre.php',
-        'Contato' => 'contato.php',
         'Experiencias' => 'experiencias.php',
-        'Projetos' => 'projetos.php'
+        'Desafio' => 'desafio.php',
+        'Contato' => 'contato.php'
     ];
 ?>  
 
@@ -14,7 +14,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>PHP Test</title>
+        <title>DuolingoFandom</title>
+        <link rel="shortcut icon" href="img/Duo_icon.png" type="image/x-icon">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@580&display=swap" rel="stylesheet">
@@ -29,7 +31,6 @@
             }
             echo '</div>';
         ?>
-        <hr>
     </header>
 
     <body>

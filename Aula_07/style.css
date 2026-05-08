@@ -26,10 +26,11 @@ header{
     align-items: center;
     justify-content: space-between;
     gap: 0.5em;
-    border-bottom: rgba(0, 0, 0, 0.144) solid 0.1em;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
-    z-index: 1000;width: 100%;
+    z-index: 1000;
+    width: 100%;
 }
 
 header a{
@@ -123,6 +124,77 @@ main .titulo{
 
 .home-simbolos{
     width: 40em;
+}
+
+#sobre-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    flex: 1;
+}
+
+.sobre-content{
+    width: 50%;
+}
+
+.sobre-img{
+    width: 25em;
+}
+
+#caracteristicas .titulo {
+    text-align: center;
+}
+
+.div-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 2em;
+}
+
+.titulo-card{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2;
+    font-size: 1.2em;
+    color: #4b4b4b;;
+}
+
+.p-cards {
+    margin-top: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.2;
+    color: #777777;
+    text-align: justify;
+}
+
+.sobre-cards{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.divisor{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    width: 20%;
+    border: solid 1.5px #4E8B36;
+    border-radius: 2px;
 }
 
 footer{
