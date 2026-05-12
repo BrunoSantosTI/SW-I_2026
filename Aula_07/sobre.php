@@ -9,7 +9,7 @@
 <body id="sobre">
     <section id="sobre-section">
         <div class="sobre-img-container">
-            <img class="home-img" src="img/duofly.gif" alt="Imagem do Duolingo">
+            <img class="sobre-img" src="img/duofly.gif" alt="Imagem do Duolingo">
         </div>
 
         <div class="sobre-content">
@@ -26,25 +26,35 @@
     <section id="caracteristicas">
         <h1 class="titulo">Principais características</h1>
 
-        <div class="div-cards">
-            <div class="sobre-cards">
-                <h2 class="titulo-card">Lições rápidas e práticas</h2>
-                <p class="p-card">As atividades são curtas e objetivas, permitindo aprender aos poucos sem cansar, mesmo com poucos minutos disponíveis por dia.</p>
+        <div class="div-caracteristicas">
+            <div class="div-cards">
+                <div class="sobre-cards">
+                    <h2 class="titulo-card">Lições rápidas e práticas</h2>
+                    <p class="p-card">As atividades são curtas e objetivas, permitindo aprender aos poucos sem cansar, mesmo com poucos minutos disponíveis por day.</p>
+                </div>
+
+                <div class="sobre-cards">
+                    <h2 class="titulo-card">Sistema de níveis e recompensas</h2>
+                    <p class="p-card">O aplicativo utiliza pontos, metas e conquistas para incentivar o usuário a continuar praticando diariamente de forma divertida.</p>
+                </div>
+
             </div>
 
-            <div class="sobre-cards">
-                <h2 class="titulo-card">Sistema de níveis e recompensas</h2>
-                <p class="p-card">O aplicativo utiliza pontos, metas e conquistas para incentivar o usuário a continuar praticando diariamente de forma divertida.</p>
+            <div class="div-widget">
+                <img src="img/DuoWidget.jpg" alt="Widget do Duolingo" class="widget-img widget-img-1">
+                <img src="img/DuoWidget2.jpg" alt="Widget do Duolingo" class="widget-img widget-img-2">
             </div>
 
-            <div class="sobre-cards">
-                <h2 class="titulo-card">Prática completa do idioma</h2>
-                <p class="p-card">Os exercícios trabalham leitura, escrita, escuta e fala, ajudando no desenvolvimento equilibrado das habilidades linguísticas.</p>
-            </div>
+            <div class="div-cards">
+                <div class="sobre-cards">
+                    <h2 class="titulo-card">Prática completa do idioma</h2>
+                    <p class="p-card">Os exercícios trabalham leitura, escrita, escuta e fala, ajudando no desenvolvimento equilibrado das habilidades linguísticas.</p>
+                </div>
 
-            <div class="sobre-cards">
-                <h2 class="titulo-card">Acompanhamento de progresso</h2>
-                <p class="p-card">O usuário pode visualizar sua evolução, manter sequências de estudo e acompanhar seu desempenho ao longo do aprendizado.</p>
+                <div class="sobre-cards">
+                    <h2 class="titulo-card">Acompanhamento de progresso</h2>
+                    <p class="p-card">O usuário pode visualizar sua evolução, manter sequências de estudo e acompanhar seu desempenho ao longo do aprendizado.</p>
+                </div>
             </div>
         </div>
     </section>

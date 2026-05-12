@@ -144,15 +144,63 @@ main .titulo{
     width: 25em;
 }
 
-#caracteristicas .titulo {
+#caracteristicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#caracteristicas .titulo{
     text-align: center;
+}
+
+.div-caracteristicas{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    min-height: 30em;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-cards{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2em;
     padding: 2em;
+    justify-content: center;
+    min-height: 30em;
+    width: 100%;
+}
+
+.div-widget{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    min-height: 30em;
+    padding: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+}
+
+.widget-img{
+    border-radius: 5px;
+    width: auto ;
+}
+
+.widget-img-1,
+.widget-img-2{
+    position: relative;
+}
+
+.widget-img-1{
+    align-self: center;
+}
+
+.widget-img-2{
+    align-self: center;
 }
 
 .titulo-card{
@@ -179,9 +227,10 @@ main .titulo{
 }
 
 .sobre-cards{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
-    padding: 1%;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    padding: 2em;
     border-radius: 5px;
+    min-width: 15em;
 }
 
 .divisor{
