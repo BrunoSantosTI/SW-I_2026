@@ -203,6 +203,24 @@ main .titulo{
     align-self: center;
 }
 
+@media(max-width: 920px){
+    .div-widget{
+        display: none;
+    }
+
+    .div-caracteristicas{
+        flex-direction: column;
+    }
+
+    #sobre-section{
+        flex-direction: column;
+    }
+
+    .sobre-content{
+        width: 90%;
+    }
+}
+
 .titulo-card{
     margin-top: 0;
     margin-bottom: 0.5rem;
