@@ -3,7 +3,7 @@
         'Home' => 'home.php',
         'Sobre' => 'sobre.php',
         'Experiencias' => 'experiencias.php',
-        'Desafio' => 'desafio.php',
+        'Projetos' => 'projetos.php',
         'Contato' => 'contato.php'
     ];
 ?>  
