@@ -2,49 +2,68 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação de CPF - PHP</title>
+    <title>Validação de CPF</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <form method="post">
-                <div class="AreaCPF">
-                    <label for="CPF">Digite o seu CPF</label>
-                    <input class="inputCPF" type="text" name="CPF" id="idCPF" placeholder="01234567890" required>
-                </div>
 
-                <input class="btnEnviar" type="submit" value="Enviar" name="btn_enviar">
-            </form>
+    <div class="container">
+        <h2>Validação de CPF</h2>
 
-            <?php
-                if (isset($_POST['btn_enviar'])) {
-                    $_CPF = $_POST["CPF"];
-                    $_CPF = preg_replace('/[^0-9]/', '', $_CPF);
+        <form method="post">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
 
-                    $_digitos = str_split($_CPF);
-                    
-                    $_i = 10;
-                    $_t = 0;
-                    $_soma = 0;
+            <label>CPF:</label>
+            <input type="text" name="cpf" required>
 
-                    while ($_i >= 2) {
-                        $_soma += $_i * $_digitos[$_t];
-                        $_i --;
-                        $_t ++;
-                    }
-                    print_r($_t);
+            <button type="submit" name="btn_enviar">Validar CPF</button>
+        </form>
+    </div>
 
-                    $_dig1 = $_soma % 11;
+    <?php
 
+        if (isset($_POST['btn_enviar'])) {
 
-                    print_r($_dig1);
+            $nome = $_POST['nome'];
+            $cpf = preg_replace('/[^0-9]/', '', $_POST['cpf']);
+
+            function validarCPF($cpf)
+            {
+                if (strlen($cpf) != 11) {
+                    return false;
                 }
 
+                if (preg_match('/(\d)\1{10}/', $cpf)) {
+                    return false;
+                }
 
+                for ($t = 9; $t < 11; $t++) {
+                    $soma = 0;
 
-            ?>  
-        </div>
-    </main>
+                    for ($c = 0; $c < $t; $c++) {
+                        $soma += $cpf[$c] * (($t + 1) - $c);
+                    }
+
+                    $digito = ((10 * $soma) % 11) % 10;
+
+                    if ($cpf[$c] != $digito) {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+
+            echo "<h2>Resultado</h2>";
+            echo "<p>Nome: $nome</p>";
+
+            if (validarCPF($cpf)) {
+                echo "<p style='color:green; margin: 0 auto;'>CPF VÁLIDO</p>";
+            } else {
+                echo "<p style='color:red; margin: 0 auto;'>CPF INVÁLIDO</p>";
+            }
+        }
+    ?>
 </body>
 </html>
