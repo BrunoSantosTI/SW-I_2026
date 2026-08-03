@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Consulta Pokémon</h1>
+
+        <input
+            type="number"
+            id="numero"
+            placeholder="Digite um número (1 a 1025)"
+        >
+
+        <button onclick="callAPI()">
+            Consultar
+        </button>
+
+        <div id="resultado">
+
+            <h2 id="nome"></h2>
+
+            <img id="imagem" src="" alt="" style="display: none;">
+
+            <p>
+                <strong>Tipo:</strong>
+                <span id="tipo"></span>
+            </p>
+
+            <button id="btnShiny" onclick="mostrarShiny()" style="display:none;">
+                Mostrar versão Shiny
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
